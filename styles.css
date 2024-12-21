@@ -1,0 +1,393 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline;
+  }
+  
+  .menu a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    background-color: #555;
+  }
+  
+  /* Адаптивные стили */
+  @media (max-width: 600px) {
+    .menu li {
+        display: block;
+        text-align: center;
+     }
+  }
+  
+  /* Стили для контента */
+  main {
+     padding: 20px;
+     text-align: center;
+  }
+  
+  /* Стили для списков */
+  .service-list,
+  .client-list {
+     list-style-type: none;
+     padding: 0;
+  }
+  
+  /* Стили для сетки */
+  .grid-container {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+     gap: 10px;
+     margin-top: 20px;
+  }
+  
+  .grid-item {
+     background-color: #f4f4f4;
+     padding: 20px;
+     border-radius: 5px;
+     text-align: center;
+  }
+  
+  /* Анимации */
+  .animated {
+     animation: fadeIn ease-in-out 2s forwards;
+  }
+  
+  @keyframes fadeIn {
+     from { opacity: 0; }
+     to { opacity: 1; }
+  }
+
+  * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #c08e8e;
+}
+
+tbody tr:hover {
+    background-color: #bb9494;
+}
+
+@media (max-width: 768px) {
+    th, td {
+        font-size: 14px;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/xim.jpg'); 
+    background-size: cover; /* Масштабирование фона */
+    background-position: center; /* Центрирование фона */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Полупрозрачный фон для навигации */
+}
+main{
+    background-color: rgba(196, 165, 165, 0.8); /* Полупрозрачный фон */
+}
+
+nav {
+    display: grid; /* Использование Grid для навигации */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Автоматическое заполнение колонок */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Центрирование элементов меню */
+}
+
+.menu li {
+    margin: 0 10px; /* Отступы между элементами меню */
+}
+
+.menu a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: rgba(85, 85, 85, 0.6); /* Эффект наведения */
+}
+
+/* Основной контент с прозрачностью */
+.main-content {
+    display: grid; /* Использование Grid для основного контента */
+    grid-template-columns: 1fr; /* Одна колонка для основного контента */
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон для основного контента */
+    padding: 20px;
+    margin: 20px auto; /* Центрирование контента */
+    max-width: 800px; /* Максимальная ширина контента */
+    border-radius: 10px; /* Закругленные углы */
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* Адаптивные стили */
+@media (max-width: 600px) {
+   .menu li {
+       display: block;
+       text-align: center;
+   }
+}
+
+.scroll-button {
+    position: fixed; /* Фиксируем позицию кнопки */
+    bottom: 20px; /* Отступ от нижнего края */
+    right: 20px; /* Отступ от правого края */
+    display: inline-block; /* Делаем ссылку блочным элементом для добавления отступов */
+    background-color: #567457; /* Зеленый фон */
+    color: white; /* Белый текст */
+    padding: 10px 10px; /* Отступы */
+    text-align: center; /* Центрирование текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 10px; /* Закругленные углы */
+    transition: background-color 0.5s ease; /* Плавный переход цвета фона */
+}
+
+.scroll-button:hover {
+    background-color: #2ac532; /* Темнее при наведении */
+}
+
+.scroll-button:active {
+    background-color: #3e8e41; /* Более темный цвет при нажатии */
+}
+
+footer {
+    margin-top: 10px;
+    background-color: #333; /* Темный фон для футера */
+    color: white; /* Белый текст */
+    text-align: left; /* Центрирование текста */
+    padding: 10px; /* Отступы внутри футера */
+}
+
+address {
+    font-style: normal; /* Убираем курсив для адреса */
+    margin-bottom: 10px; /* Отступ снизу для адреса */
+}
+.service-table {
+    width: 100%; /* Занимает всю ширину контейнера */
+    border-collapse: collapse; /* Убирает двойные границы */
+    background-color: #f9f9f9; /* Цвет фона таблицы */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+/* Таблица */
+.service-table th {
+    background-color: #333; /* Цвет фона заголовков */
+    color: white; /* Цвет текста заголовков */
+    padding: 10px; /* Отступы внутри ячеек заголовков */
+}
+
+.service-table td {
+    background-color: #fff; /* Цвет фона ячеек */
+    padding: 10px; /* Отступы внутри ячеек */
+    border: 1px solid #ddd; /* Граница ячеек */
+}
+
+/* Эффект при наведении на строки таблицы */
+.service-table tr:hover {
+    background-color: #f1f1f1; /* Цвет фона строки при наведении */
+}
+
+.menu {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем отступы */
+    background-color: #333; /* Цвет фона меню */
+}
+
+.menu > li {
+    position: relative; /* Для позиционирования подменю */
+    display: inline-block; /* Горизонтальное расположение пунктов меню */
+}
+
+.menu a {
+    color: white; /* Цвет текста */
+    padding: 15px 20px; /* Отступы */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.menu a:hover {
+    background-color: #555; /* Цвет фона при наведении */
+}
+
+/* Стили для контейнера видео */
+.video-container {
+    padding: 10px; /* Уменьшены внутренние отступы для более компактного вида */
+    border-radius: 12px; /* Скругляет углы рамки */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Увеличенная тень для глубины */
+
+}
+
+/* Стили для самого видео */
+video {
+    width: 80%; /* Делает видео адаптивным на всю ширину контейнера */
+    height: auto; /* Сохраняет пропорции видео */
+    border-radius: 10px; /* Скругляет углы видео для согласованности с контейнером */
+    transition: transform 0.5s ease; /* Плавный переход при наведении */
+}
+
+video:hover {
+    transform: scale(1.02); /* Увеличение видео при наведении для эффекта интерактивности */
+}
+
+
+/* Стили для подменю */
+.submenu {
+    display: none; /* Скрываем подменю по умолчанию */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 100%; /* Подменю располагается под родительским элементом */
+    left: 0;
+    background-color: #67a4c0; /* Цвет фона подменю */
+    z-index: 1000; /* Обеспечиваем, чтобы подменю было поверх других элементов */
+    width: max-content; /* Ширина подменю по содержимому */
+    padding: 10px 0; /* Отступы для подменю */
+    border-radius: 8px; /* Скругление углов подменю */
+}
+
+/* Позиционирование дочерних элементов вертикально */
+.submenu li {
+    display: block; /* Элементы располагаются вертикально */
+    width: auto; /* Автоматическая ширина для элементов */
+    margin: 5px 0; /* Отступы между элементами (сверху и снизу) */
+}
+
+.menu li {
+    position: relative; /* Устанавливаем относительное позиционирование для родительского элемента */
+}
+
+.menu li:hover > .submenu {
+    display: block; /* Показываем подменю при наведении на родительский элемент */
+}
+
+.submenu a {
+    padding: 10px 15px; /* Отступы для ссылок в подменю */
+    text-decoration: none; /* Убираем подчёркивание у ссылок */
+    color: #131212; /* Цвет текста ссылок */
+    display: block; /* Делаем ссылки блочными элементами для удобства клика */
+}
+
+.submenu a:hover {
+    background-color: #e6d7d7; /* Цвет фона ссылки при наведении */
+}
+
+/* Ограничиваем ширину меню, чтобы оно не выходило за пределы экрана */
+.menu {
+    max-width: 100%; /* Максимальная ширина меню равна ширине экрана */
+}
+
+.submenu {
+    max-height: 300px; /* Максимальная высота подменю (по желанию) */
+    overflow-y: auto; /* Добавляем прокрутку, если содержимое превышает максимальную высоту */
+}
+
+
+  /* Анимация для заголовка */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    animation: fadeIn 1s ease-in-out; /* Применяем анимацию к заголовку */
+}
+
+
+/* Стили для шапки сайта */
+header {
+    text-align: center; /* Центрируем текст в шапке */
+    padding: 20px; /* Отступы вокруг шапки */
+    background-color: rgba(249, 249, 249, 0.8); /* Полупрозрачный цвет фона шапки */
+    border-bottom: 2px solid rgba(221, 221, 221, 0.8); /* Полупрозрачная нижняя граница шапки */
+}
+
+/* Стили для меню */
+.menu {
+    font-family: 'Open Sans', sans-serif; /* Устанавливаем новый шрифт для меню */
+    list-style: none; /* Убираем маркеры списка */
+}
+
+/* Стили для ссылок в меню */
+.menu a {
+    display: block; /* Делаем ссылки блочными элементами для удобства клика */
+    padding: 15px 20px; /* Отступы для ссылок */
+    color: #ffffffd0; /* Цвет текста ссылок */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Плавный переход для фона и цвета текста */
+}
+
+/* Эффект при наведении на ссылки в меню */
+.menu a:hover {
+    background-color: #67a4c0; /* Цвет фона при наведении */
+    color: #000000d2; /* Цвет текста при наведении */
+}
+
+
